@@ -63,9 +63,9 @@ if [ ${MODE} != "inference" ] && [ ${MODE} != "training" ]; then
 fi
 
 # Determines if we are running in a container by checking for .dockerenv
-function _running-in-container()
-{
-  [ -f /.dockerenv ]
+function _running-in-container() 
+{ 
+       	[ -f /.dockerenv ] 
 }
 
 if [[ ${NOINSTALL} != "True" ]]; then
@@ -1408,3 +1408,5 @@ else
   echo "Unsupported model: ${MODEL_NAME}"
   exit 1
 fi
+
+
